@@ -6,13 +6,17 @@ QuaDev's repositories are part of an ambitious research project focused on softw
 ## Architecture:
 The architecture of our microservices is designed around the API Gateway pattern. This pattern acts as a single entry point for all client requests, offering optimized management and routing to various microservices. It enhances security and scalability in distributed systems.
 
-## Authentication:
-For secure authentication, we employ JWT (JSON Web Tokens) encrypted with RSA encryption mechanisms. This ensures a robust authentication process, critical for modern application security.
+### Authentication:
+For secure authentication, we employ JWT (JSON Web Tokens) encrypted with RSA encryption mechanisms. This ensures a robust authentication process, critical for modern application security.  
 
-## Client Application:
+### Security
+The API Gateway uses the JWT tokens to authenticate the requests without any need to interact with any other services.
+Internally, between microservices, TLS secured connections are used to provide a secure channel. TLS provides encryption for data in transit, ensuring that information exchanged between services remains confidential and tamper-proof. 
+
+### Client Application:
 On the client side, we use a React Native application. React Native allows for building native apps using React, a popular JavaScript library. Our client app is integrated with Firebase, a platform developed by Google for creating mobile and web applications, which helps in managing data real-time, user authentication, and hosting.
 
-## Testing and CI/CD:
+### Testing and CI/CD:
 We are committed to best practices in software development. Our approach includes comprehensive testing at various levels - unit, integration, functional, and end-to-end. These tests are an integral part of our project pipelines, implemented using GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD). This ensures code quality and efficient delivery.
 
 ## Golang micro services stack
