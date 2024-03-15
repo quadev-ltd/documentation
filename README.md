@@ -31,6 +31,11 @@ github.com/tryvium-travels/memongo v0.11.0: A library for spinning up an in-memo
 - **protoc**: For a project utilizing gRPC for microservices communication, protoc is essential for generating the boilerplate code needed to implement the defined services and messages in Go.
 - **buf**: Helps streamline the process of working with protocol buffers and gRPC services. In projects that heavily use protocol buffers, especially with multiple .proto files and dependencies, buf can simplify the code generation process, enforce best practices, and ensure compatibility across protobuf versions.
 
+### API Gateway and Routing
+
+- **github.com/gin-gonic/gin**: A high-performance HTTP web framework. Gin is used to create RESTful API endpoints, handle routing, middleware, and it's known for its performance efficiency compared to other Go web frameworks. It simplifies tasks like parameter parsing, JSON validation, and response rendering, making it easier to build scalable and maintainable web applications.
+
+
 ### Logging
 - **github.com/rs/zerolog**: A fast and simple logger that provides JSON-formatted output. It's designed with performance and simplicity in mind, supporting structured logging and leveled logging. This library is used to log messages, errors, and other relevant information throughout the application, aiding in debugging and monitoring.
 
